@@ -14,3 +14,5 @@ This is just 2 scripts which I used to get 100+ people's strava activity for a c
 - `profiles.csv` should be a copy of your google sheet
 
 - `activity_ouput.csv` is the output of `fetch.py`
+
+- Be careful of the number of API calls
