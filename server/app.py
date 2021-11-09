@@ -4,8 +4,6 @@ import gspread
 from datetime import datetime
 from flask import Flask, request
 
-# This is the actual code used
-# FYI: This is code is far from perfect
 def restofstuff(cod):
 
     # Make Strava auth API call with your
@@ -26,7 +24,7 @@ def restofstuff(cod):
     # Google sheet auth and opening
     # Don't forget to enter the correct path for google api service account credentials
     gc = gspread.service_account(filename='./creds.json')
-    sh = gc.open_by_key("1RpLqZkLyPgLWMFN047463vIUKN2_5sscv0RIqW8g3Pk").sheet1
+    sh = gc.open_by_key("YOUR GOOGLE SHEETS FILE KEY").sheet1
     id = None
     token_str = json.dumps(strava_tokens)
 
